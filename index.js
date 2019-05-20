@@ -1,11 +1,13 @@
 import units from 'units-css'
-import html from 'choo/html'
+import html from 'nanohtml'
 import devtools from 'choo-devtools'
-import choo from 'choo'
+import choo from 'nanochoo'
 import 'bulma/css/bulma.css'
 
 var app = choo()
+
 app.use(devtools())
+
 app.use(function (state, emitter) {
   state.units = {
     px: '',
@@ -22,7 +24,8 @@ app.use(function (state, emitter) {
     emitter.emit('render')
   })
 })
-app.route('/', function mainView (state, emit) {
+
+app.view(function (state, emit) {
   return html`
     <body>
       <section class="section">
@@ -46,4 +49,5 @@ app.route('/', function mainView (state, emit) {
     emit('input', key, val)
   }
 })
+
 app.mount('body')
