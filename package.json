@@ -1,0 +1,21 @@
+{
+  "name": "css-units",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "parcel build index.html --out-dir docs",
+    "start": "parcel index.html",
+    "test": "standard"
+  },
+  "author": "Nate Goldman <ungoldman@gmail.com> (https://ungoldman.com/)",
+  "license": "ISC",
+  "dependencies": {
+    "bulma": "^0.7.5",
+    "choo": "^6.13.3",
+    "choo-devtools": "^2.5.1",
+    "nanohtml": "^1.6.2",
+    "parcel-bundler": "^1.12.3",
+    "units-css": "^0.4.0"
+  }
+}
