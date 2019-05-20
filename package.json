@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "parcel build index.html --out-dir docs --public-url ./css-units",
+    "build": "parcel build index.html --out-dir docs --public-url ./",
     "start": "parcel index.html",
     "test": "standard"
   },
