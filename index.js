@@ -33,7 +33,12 @@ app.view(function (state, emit) {
         ${Object.keys(state.units).map(key => html`
           <div class="field has-addons">
             <p class="control is-expanded">
-              <input class="input" type="number" name=${key} oninput=${oninput} pattern='^[-+]?[0-9]*\.?[0-9]+$' placeholder=${key} value=${state.units[key]}>
+              <input class="input"
+                type="number"
+                name=${key}
+                oninput=${oninput}
+                placeholder=${key}
+                value=${state.units[key]}>
             </p>
             <p class="control">
               <a class="button is-static">${key}</a>
